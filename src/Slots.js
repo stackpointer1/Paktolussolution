@@ -39,7 +39,7 @@ class Slots extends Component {
       rolling: true,
       Balance: this.state.Balance - 1
     });
-
+ 
     setTimeout(() => {
       this.setState({ rolling: false });
     }, 700);
@@ -112,11 +112,13 @@ class Slots extends Component {
             >
               {this.state.rolling ? "Rolling..." : "ROLL"}
             </div>
+            <button className="button2"> sec-button</button>
+            <button className="button3">third- button</button>
           </>
         ) : (
-          "hey"
+          ""
         )}
-        <button onClick={this.clickHandler}>
+        <button  className="button" onClick={this.clickHandler}>
           {this.state.button1 ? "prev page" : "click me to play"}
         </button>
       </div>
